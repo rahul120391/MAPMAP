@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/category_bg"
+    >
+
+    <include
+        layout="@layout/layout_top_bar"
+        ></include>
+
+    <ListView
+        android:id="@+id/lv_categories"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="0.5dp"
+        android:scrollbars="none"
+        android:divider="@color/line_color"
+        ></ListView>
+</LinearLayout>

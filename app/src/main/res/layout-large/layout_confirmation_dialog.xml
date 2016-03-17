@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/top_bar_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/top_bar_color"
+        >
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="@string/title"
+            android:textColor="@color/White"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:gravity="left"
+        android:maxLength="4"
+        android:background="@drawable/shopkeeper_signup_box"
+        android:textCursorDrawable="@drawable/edittext_cursor_drawable"
+        android:inputType="numberPassword"
+        android:hint="@string/enter_confirmation_code"
+        android:textColor="@color/top_bar_color"
+        android:textColorHint="@color/top_bar_color"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:background="@color/dialog_spots"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:text="@string/submit"
+            android:textColor="@color/White" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_resend_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/resendmail_selector"
+        android:text="Resend email"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="16sp"
+        />
+</LinearLayout>

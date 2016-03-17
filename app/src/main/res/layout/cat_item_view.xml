@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+<!--
+    <ImageView
+        android:id="@+id/iv_category_image"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:padding="-12dp"
+        android:src="@drawable/ic_electronics" />
+
+
+  <ImageView
+        android:id="@+id/iv_indicator"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_indicator" />-->
+
+    <TextView
+        android:id="@+id/tv_category_name"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:paddingTop="15dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/iv_indicator"
+        android:layout_toRightOf="@+id/iv_category_image"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:text="Electronics"
+        android:background="#a9aaae"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:textSize="25sp" />
+</LinearLayout>

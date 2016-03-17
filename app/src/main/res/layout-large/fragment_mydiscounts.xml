@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@drawable/ic_background_light"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top_bar"></include>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- <ImageView
+                 android:layout_width="match_parent"
+                 android:layout_height="180dp"
+                 android:background="@drawable/ic_discount_bg" />-->
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_discount_icon" />
+        </FrameLayout>
+
+        <!--  <android.support.v4.app.FragmentTabHost xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@android:id/tabhost"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">-->
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView android:id="@+id/current_discount"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Current Discount"
+                android:textColor="#ffffff"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:textSize="22sp"
+                android:gravity="center|left"
+                android:background="@drawable/ic_button_back"/>
+
+            <TextView android:id="@+id/future_discount"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Future Discount"
+                android:textColor="#ffffff"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:textSize="22sp"
+                android:gravity="center|left"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="50dp"
+                android:background="@drawable/ic_button_back"/>
+
+            <TextView android:id="@+id/past_discount"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Past Discount"
+                android:textColor="#ffffff"
+                android:textSize="22sp"
+                android:gravity="center|left"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="50dp"
+                android:background="@drawable/ic_button_back" />
+
+            <!--<TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="0"
+                android:background="@color/dialog_spots"
+                android:showDividers="none" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />-->
+            <!-- <android.support.v4.view.ViewPager
+                 android:id="@+id/viewpager"
+                 android:layout_width="fill_parent"
+                 android:layout_height="match_parent"
+                 android:layout_gravity="bottom" />
+                 -->
+        </LinearLayout>
+        <!--
+            </android.support.v4.app.FragmentTabHost>-->\
+    </LinearLayout>
+</LinearLayout>

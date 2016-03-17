@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/transparent"
+    android:layout_height="match_parent">
+    <!-- <include
+         layout="@layout/layout_top_bar"
+         ></include>-->
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="45dp"
+        android:divider="@color/transparent"
+        android:groupIndicator="@null"
+        android:scrollbars="none"
+        android:numColumns="2"
+        android:listSelector="@color/Teal"
+        android:dividerHeight="10dp"
+        android:childDivider="@color/transparent"
+        android:layout_marginBottom="45dp"
+        android:id="@+id/elv_categories" />
+
+    <!--<ExpandableListView
+        android:id="@+id/elv_categories"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:divider="@color/transparent"
+        android:groupIndicator="@null"
+        android:scrollbars="none"
+        android:dividerHeight="10dp"
+        android:childDivider="@color/transparent"
+        android:layout_marginBottom="15dp"
+        ></ExpandableListView>-->
+</LinearLayout>

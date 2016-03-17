@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/top_bar_color"
+        android:elevation="4dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back" />
+        <TextView
+            android:id="@+id/tv_screenname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category name"
+            android:layout_marginLeft="20dp"
+            android:textSize="18sp"
+            android:textColor="@color/White"
+            />
+    </android.support.v7.widget.Toolbar>
+
+
+    <ListView
+        android:id="@+id/elv_categories"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:childDivider="@color/transparent"
+        android:divider="@color/transparent"
+        android:dividerHeight="5dp"
+        android:groupIndicator="@null"
+        android:scrollbars="none"></ListView>
+
+</LinearLayout>

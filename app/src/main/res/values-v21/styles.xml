@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Custom" parent="android:Theme.Holo.Light.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogSpotColor">@color/top_bar_color</item>
+        <item name="DialogTitleText">Loading\u002e\u002e\u002e</item>
+        <item name="DialogSpotCount">5</item>
+    </style>
+    <style name="MyTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/top_bar_color</item>
+        <item name="colorPrimaryDark">@color/top_bar_color</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

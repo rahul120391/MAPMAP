@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top_bar"></include>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#50ffffff"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/map_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@drawable/ic_background" />
+                    <ImageView
+                        android:id="@+id/iv_earth"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_earth"
+                        />
+                </FrameLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:background="#50000000"
+                    android:paddingRight="20dp"
+                    android:paddingTop="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_discount_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/discount_desc"
+                        android:textColor="@color/text_color" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/ic_back_white"
+                        android:padding="5dp">
+
+                        <EditText
+                            android:id="@+id/et_discount_desc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@color/transparent"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/line_color"
+                            android:textCursorDrawable="@drawable/edittext_cursor_drawable"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_disc_per"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/discount_per"
+                        android:textColor="@color/text_color" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/layout_sel_per"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/ic_drawer_color_bg"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/iv_flag"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_multiple" />
+
+                        <ImageView
+                            android:id="@+id/iv_dropdown"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_dropdown" />
+
+                        <TextView
+                            android:id="@+id/tv_discount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/iv_dropdown"
+                            android:layout_toRightOf="@+id/iv_flag"
+                            android:hint="@string/sel_per"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:singleLine="true"
+                            android:textColorHint="@color/White"
+                            android:textColor="@color/White"
+                            android:textCursorDrawable="@drawable/edittext_cursor_drawable"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/tv_location_head"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/loc"
+                        android:textColor="@color/text_color" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/layout_select_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/ic_back_white"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/iv_dropdown_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_dropdown" />
+
+                        <TextView
+                            android:id="@+id/tv_location"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/iv_dropdown_location"
+                            android:background="@color/transparent"
+                            android:gravity="center_vertical"
+                            android:hint="@string/select_loc"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/line_color"
+                            android:textCursorDrawable="@drawable/edittext_cursor_drawable"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/tv_category_head"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/category"
+                        android:textColor="@color/text_color" />
+
+                    <RelativeLayout
+                        android:id="@+id/layout_sel_cat"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/ic_back_white"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/iv_dropdown_category"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_dropdown" />
+
+                        <TextView
+                            android:id="@+id/tv_category"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/iv_dropdown_category"
+                            android:background="@color/transparent"
+                            android:gravity="center_vertical"
+                            android:hint="@string/sel_catt"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/line_color"
+                            android:textCursorDrawable="@drawable/edittext_cursor_drawable"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/tv_sub_category_head"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/sub_category"
+                        android:textColor="@color/text_color" />
+
+                    <RelativeLayout
+                        android:id="@+id/layout_sel_subcat"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/ic_back_white"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/iv_dropdown_subcategory"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_dropdown" />
+
+                        <TextView
+                            android:id="@+id/tv_sub_category"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/iv_dropdown_subcategory"
+                            android:background="@color/transparent"
+                            android:gravity="center_vertical"
+                            android:hint="@string/sel_sub_cat"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/line_color"
+                            android:textCursorDrawable="@drawable/edittext_cursor_drawable"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_disc_dur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/dis_dur"
+                        android:textColor="@color/text_color" />
+
+                    <RelativeLayout
+                        android:id="@+id/layout_sel_startdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/ic_back_white"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/iv_start_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_dropdown" />
+
+                        <TextView
+                            android:id="@+id/tv_start_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/iv_start_date"
+                            android:background="@color/transparent"
+                            android:gravity="center_vertical"
+                            android:hint="@string/sel_discount_starting_date"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/line_color"
+                            android:textCursorDrawable="@drawable/edittext_cursor_drawable"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_sel_enddate"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/ic_back_white"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/iv_end_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_dropdown" />
+
+                        <TextView
+                            android:id="@+id/tv_end_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/iv_end_date"
+                            android:background="@color/transparent"
+                            android:gravity="center_vertical"
+                            android:hint="@string/sel_discount_end_date"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/line_color"
+                            android:textCursorDrawable="@drawable/edittext_cursor_drawable"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <Button
+                            android:id="@+id/btn_add"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/btn_back"
+                            android:gravity="center"
+                            android:text="@string/add"
+                            android:textColor="@color/White"
+                            android:textSize="14sp" />
+
+                        <Button
+                            android:id="@+id/btn_cancel"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/btn_back"
+                            android:gravity="center"
+                            android:text="@string/cancel"
+                            android:textColor="@color/White"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--General colors-->
+    <color name="Red">#F44336</color>
+    <color name="Pink">#E91E63</color>
+    <color name="Purple">#9C27B0</color>
+    <color name="Deep_Purple">#673AB7</color>
+    <color name="Indigo">#3F51B5</color>
+    <color name="Blue">#2196F3</color>
+    <color name="Light_Blue">#03A9F4</color>
+    <color name="Cyan">#00BCD4</color>
+    <color name="Teal">#009688</color>
+    <color name="Green">#4CAF50</color>
+    <color name="Light_Green">#8BC34A</color>
+    <color name="Lime">#CDDC39</color>
+    <color name="Yellow">#FFEB3B</color>
+    <color name="Amber">#FFC107</color>
+    <color name="Orange">#FF9800</color>
+    <color name="Deep_Orange">#FF5722</color>
+    <color name="Brown">#795548</color>
+    <color name="Grey">#9E9E9E</color>
+    <color name="Blue_Grey">#607D8B</color>
+    <color name="Black">#000000</color>
+    <color name="White">#FFFFFF</color>
+    <color name="red">#BE392B</color>
+    <color name="transparent">#00000000</color>
+    <color name="theme_color">#63b9d4</color>
+    <color name="white_with_opacity">#d9ffffff</color>
+    <color name="line_divider">#c4c6c9</color>
+    <color name="button_back">#E65CA8C2</color>
+    <color name="button_shadow">#238eb8</color>
+    <color name="top_bar_color">#3a3e4a</color>
+    <!--NiftyDialog Colors-->
+    <color name="text_color">#FFFFFF</color>
+    <color name="divider_color">#11000000</color>
+    <color name="msg_color">#FFFFFFFF</color>
+    <color name="dialog_bg">#ffe74c3c</color>
+
+    <color name="btn_press_color">#66000000</color>
+    <color name="btn_unpress_color">#22000000</color>
+
+    <!--ProgressDialog color-->
+    <color name="dialog_spots">#63b9d4</color>
+    <color name="spots_dialog_color">@color/dialog_spots</color>
+
+    <color name="map_edittext_stroke">#CCCAC9</color>
+
+    <color name="mdtp_accent_color">@color/dialog_spots</color>
+    <color name="mdtp_accent_color_dark">@color/dialog_spots</color>
+    <color name="category_bg">#fbf8f1</color>
+    <color name="category_icon_bg">#c6e8e9</color>
+    <color name="category_header_color">#008abf</color>
+    <color name="tab_divider_color">#00455f</color>
+    <color name="tab_unselected">#008abf</color>
+    <color name="line_color">#717171</color>
+    <color name="ampm_text_color">#8c8c8c</color>
+    <color name="numbers_text_color">#8c8c8c</color>
+    <color name="circle_background">#f2f2f2</color>
+    <color name="line_background">#cccccc</color>
+    <color name="done_text_color_disabled">#CCCCCC</color>
+    <color name="done_text_color_normal">#333333</color>
+    <color name="transparent_black">#7F000000</color>
+    <color name="blue">#33b5e5</color>
+    <color name="darker_blue">#0099CC</color>
+    <color name="date_picker_text_normal">#FF999999</color>
+
+    <color name="calendar_header">#999999</color>
+    <color name="date_picker_view_animator">#f2f2f2</color>
+    <color name="calendar_selected_date_text">#FFD1D2D4</color>
+    <color name="drawer_bg">#30000000</color>
+</resources>

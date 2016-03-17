@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/category_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/dialog_spots"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/tv_add_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_back"
+            android:gravity="center"
+            android:text="@string/add_location"
+            android:textColor="@color/White"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sc_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/layout_select_location"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbars="vertical">
+
+            <EditText
+                android:id="@+id/et_enter_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:background="@drawable/shopkeeper_signup_box"
+                android:padding="10dp"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:hint="@string/select_loc"
+                android:drawableLeft="@drawable/ic_loc_icon"
+                android:drawablePadding="10dp"
+                android:paddingLeft="20dp"
+                android:textColor="@color/line_color"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:background="@drawable/shopkeeper_signup_box"
+                android:padding="10dp"
+                android:gravity="center_vertical"
+                android:hint="@string/store_num"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="20dp"
+                android:inputType="phone"
+                android:paddingLeft="20dp"
+                android:drawableLeft="@drawable/ic_mobile_icon"
+                android:singleLine="true"
+                android:textColor="@color/line_color"
+                android:textCursorDrawable="@drawable/edittext_cursor_drawable"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_select_working_hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/select_working_hours"
+                android:textColor="@color/Black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_days"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/days"
+                        android:textColor="@color/Black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_closed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/closed"
+                        android:textColor="@color/Black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_working_hours"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/tv_closed"
+                        android:layout_toRightOf="@+id/tv_days"
+                        android:gravity="center"
+                        android:text="@string/working_hours"
+                        android:textColor="@color/Black"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_weekdays"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center_horizontal"
+                        android:text="@string/weekdays"
+                        android:textColor="@color/line_color"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/ch_weekdays"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:button="@drawable/sub_category_selector"
+                        android:textColor="@color/Black" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_weekdays_from"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:hint="From"
+                                android:textColor="@color/line_color"
+                                android:textSize="16sp" />
+                            <View
+                                android:layout_width="10dp"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@color/line_color"
+                                android:layout_gravity="center_vertical"
+                                ></View>
+                            <TextView
+                                android:id="@+id/tv_weekdays_to"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_centerVertical="true"
+                                android:hint="To"
+                                android:textColor="@color/line_color"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_saturday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center_horizontal"
+                        android:text="@string/saturday"
+                        android:textColor="@color/line_color"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/ch_saturday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:button="@drawable/sub_category_selector"
+                        android:textColor="@color/Black" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_sat_from"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:hint="From"
+                                android:textColor="@color/line_color"
+                                android:textSize="16sp" />
+                            <View
+                                android:layout_width="10dp"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@color/line_color"
+                                android:layout_gravity="center_vertical"
+                                ></View>
+                            <TextView
+                                android:id="@+id/tv_sat_to"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_centerVertical="true"
+                                android:hint="To"
+                                android:textColor="@color/line_color"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_sunday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center_horizontal"
+                        android:text="@string/sunday"
+                        android:textColor="@color/line_color"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/ch_sunday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:button="@drawable/sub_category_selector"
+                        android:textColor="@color/Black" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_sun_from"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:hint="From"
+                                android:textColor="@color/line_color"
+                                android:textSize="16sp" />
+
+                            <View
+                                android:layout_width="10dp"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@color/line_color"
+                                android:layout_gravity="center_vertical"
+                                ></View>
+                            <TextView
+                                android:id="@+id/tv_sun_to"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:hint="To"
+                                android:textColor="@color/line_color"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_addtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:background="@drawable/shopkeeper_signup_box"
+                android:padding="10dp"
+                android:gravity="center_vertical"
+                android:hint="@string/add_text"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                android:inputType="textMultiLine"
+                android:drawableLeft="@drawable/ic_desc_icon"
+                android:singleLine="true"
+                android:textColor="@color/line_color"
+                android:textCursorDrawable="@drawable/edittext_cursor_drawable"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_back"
+                android:gravity="center"
+                android:text="@string/submit"
+                android:textColor="@color/White"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

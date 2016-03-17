@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="200dp"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/rlv1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:background="@drawable/rectangle" >
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/ic_loc_white"
+                />
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:textColor="@color/White"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/ic_workinghours_white"
+                />
+            <TextView
+                android:id="@+id/tv_workinghours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:textColor="@color/White"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+        </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlv2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/rlv1"
+        android:layout_gravity="center"
+        android:background="@drawable/tringle"
+        android:rotation="180" />
+</LinearLayout>
